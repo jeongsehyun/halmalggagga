@@ -1,0 +1,31 @@
+@import "../../variables.scss";
+
+.home-container {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .header-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-title {
+    margin-left: 20px;
+    flex-grow: 1;
+    color: $text-default;
+  }
+
+  .icon-location {
+    font-size: 20px;
+    color: $main-gray;
+  }
+
+  .img-ppcat {
+    width: 100px;
+    align-self: flex-end;
+    transform: scaleX(-1);
+    cursor: pointer;
+  }
+}

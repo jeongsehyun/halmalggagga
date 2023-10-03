@@ -1,0 +1,51 @@
+@import "../../variables.scss";
+
+.choicebox-container {
+  width: calc(100vw - 48px);
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .type-box {
+    position: absolute;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid $main-gray;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon-type {
+      font-size: 20px;
+      font-weight: bold;
+      color: $text-info;
+    }
+  }
+
+  & > .content-box {
+    width: calc(100% - 20px);
+    margin-left: 20px;
+  }
+
+  & .content-box > p {
+    margin-left: 20px;
+    flex-grow: 1;
+    text-align: left;
+  }
+}
+
+.choicebox-container:hover,
+.choicebox-container:active {
+  transform: scale(1.02);
+}
+.choicebox-container:hover .type-o,
+.choicebox-container:active .type-o {
+  color: $main-green;
+}
+.choicebox-container:hover .type-x,
+.choicebox-container:active .type-x {
+  color: $main-pink;
+}

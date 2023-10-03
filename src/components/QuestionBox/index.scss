@@ -1,0 +1,50 @@
+@import "../../variables.scss";
+
+.questionbox-container {
+  height: 240px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 20px 20px 0 0;
+  border: 2px solid $main-gray;
+  color: $text-default;
+  background-color: white;
+
+  .img-box {
+    position: absolute;
+    top: -50px;
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid $main-gray;
+    background-color: white;
+    overflow: hidden;
+
+    .img {
+      width: 100px;
+      height: 100px;
+      background-color: lightgray;
+    }
+  }
+
+  & > .content {
+    width: 100%;
+    text-align: left;
+    margin-top: 50px;
+    flex-grow: 1;
+    overflow-y: scroll;
+  }
+
+  & > .title {
+    margin: 12px 0;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .btn-touch {
+    align-self: flex-end;
+  }
+}

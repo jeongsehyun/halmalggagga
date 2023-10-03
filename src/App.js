@@ -1,9 +1,16 @@
 import "./App.scss";
+import Choice from "./pages/Choice";
+import Home from "./pages/Home";
+import Opinion from "./pages/Opinion";
+import Question from "./pages/Question";
 
 function App() {
   return (
     <div className="App">
-      <h1>hello world</h1>
+      {/* <Home /> */}
+      {/* <Question /> */}
+      {/* <Choice /> */}
+      <Opinion />
     </div>
   );
 }

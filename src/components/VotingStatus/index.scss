@@ -1,0 +1,37 @@
+@import "../../variables.scss";
+
+.voting-status-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  .type-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid $main-gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon-type {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .type-o {
+      color: $main-green;
+    }
+    .type-x {
+      color: $main-pink;
+    }
+  }
+
+  & > .content {
+    margin: 12px 0 24px 0;
+    width: 100%;
+    font-size: 16px;
+  }
+}

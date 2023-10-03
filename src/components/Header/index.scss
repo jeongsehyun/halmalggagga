@@ -1,0 +1,23 @@
+@import "../../variables.scss";
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: white;
+
+  .icon-back {
+    color: $main-gray;
+    font-size: 20px;
+  }
+
+  .header-title {
+    flex-grow: 1;
+    margin-right: 20px;
+    font-size: 16px;
+    color: $text-default;
+  }
+}
+.header-container.border {
+  border: 2px solid $main-gray;
+}

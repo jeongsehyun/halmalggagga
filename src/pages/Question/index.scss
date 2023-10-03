@@ -1,0 +1,30 @@
+@import "../../variables.scss";
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: lightblue;
+
+  .header-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-title {
+    margin-left: 20px;
+    flex-grow: 1;
+  }
+
+  .icon-location {
+    font-size: 20px;
+    color: $main-gray;
+  }
+
+  .img-ppcat {
+    width: 100px;
+    align-self: flex-end;
+    transform: scaleX(-1);
+    cursor: pointer;
+  }
+}

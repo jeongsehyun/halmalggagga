@@ -1,8 +1,22 @@
-$main-green: #b4c11d;
+@import "variables.scss";
 
 .App {
   position: relative;
   height: 100%;
   text-align: center;
-  border: 4px solid $main-green;
+  // border: 4px solid $main-green;
+}
+
+.page-container {
+  width: 100%;
+  height: 100%;
+  // border: 5px solid red;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.margin-bottom-24 {
+  margin-bottom: 24px;
 }
