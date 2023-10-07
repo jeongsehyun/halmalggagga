@@ -4,6 +4,12 @@
   display: flex;
   flex-direction: column;
   background-color: white;
-
   justify-content: flex-start;
+
+  & .comments-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
 }
